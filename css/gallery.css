@@ -124,6 +124,7 @@ div.contain
 	overflow-y: hidden;
 	margin: 0;
 	padding: 0;
+	scroll-snap-type: x mandatory;
 }
 .row img
 {
@@ -134,6 +135,7 @@ div.contain
 	flex: 1 1 auto;
 	user-select: none;
 	-webkit-user-select: none;
+	scroll-snap-align: start;
 }
 
 @media (max-aspect-ratio: 9/10) 
