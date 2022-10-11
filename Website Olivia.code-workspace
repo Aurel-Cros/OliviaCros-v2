@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "OliviaCros-v2",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "OliviaCros-v2",
+		"liveServer.settings.useWebExt": true,
+		"phpserver.phpPath": "C:/Program Files/PHP/php.exe",
+		"phpserver.phpConfigPath": "C:/Program Files/PHP/php.ini-development",
+		"phpserver.relativePath": "."
+	}
+}
