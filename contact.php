@@ -1,5 +1,6 @@
 <?php
-$email = 'contact@olivia-cros.fr';
+$email = ""; //output mail
+
 if ($_POST['tel'] && $_POST['noms'])
 {
 	$tel = htmlspecialchars(strip_tags($_POST['tel']));
