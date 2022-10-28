@@ -5,7 +5,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
             <title>Olivia Cros - Galerie photos</title>
             <meta name="description" content="Olivia Cros, comedienne">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 			<script type="text/javascript" src="js/gallery.js"></script>
 			<script type="text/javascript" src="js/swipe.js"></script>
 			<link rel="stylesheet" href="css/gallery.css">
@@ -35,7 +35,7 @@
 			<button class="close" onclick="self.close();">&times;</button>
 				<!-- Full-width images with number text -->
 				<div class="mySlides" style="display: flex;"> <!-- Init with image 1 -->
-					<img src="img/slidshw1.jpg" alt="Photo Olivia 1" />
+					<img src="img/slidshw1.jpg" alt="Photo Olivia 1">
 					<!-- Next and previous buttons -->
 					<div class="prev" onclick="plusSlides(-1)">&#10094;</div>
 					<div class="next" onclick="plusSlides(1)">&#10095;</div>
@@ -48,7 +48,7 @@
 				{
 					echo
 '				<div class="mySlides">
-					<img src="img/slidshw'.$i.'.jpg" alt="Photo Olivia '.$i.'" />
+					<img src="img/slidshw'.$i.'.jpg" alt="Photo Olivia '.$i.'">
 					<!-- Next and previous buttons -->
 					<div class="prev" onclick="plusSlides(-1)">&#10094;</div>
 					<div class="next" onclick="plusSlides(1)">&#10095;</div>
@@ -60,11 +60,11 @@
 
 			<!-- Thumbnail images -->
 			<div class="row">
-				<img class="demo cursor active" src="img/slidshw1.jpg" onclick="currentSlide(1)" alt="Olivia Cros" />
+				<img class="demo cursor active" src="img/slidshw1.jpg" onclick="currentSlide(1)" alt="Olivia Cros">
 				<?php
 				for ($i=2 ; $i<$nb ; $i++)
 				{
-					echo '<img class="demo cursor" src="img/slidshw'.$i.'.jpg" onclick="currentSlide('.$i.')" alt="Olivia Cros - Photo '.$i.'" />
+					echo '<img class="demo cursor" src="img/slidshw'.$i.'.jpg" onclick="currentSlide('.$i.')" alt="Olivia Cros - Photo '.$i.'">
 						';
 				}
 				?>

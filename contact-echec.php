@@ -5,7 +5,7 @@ if (!$_GET['err']) {
 }
 switch ($_GET['err']) {
 	case 'noinput':
-		$erreur = htmlentities('La récupération de part ou totalité des informations fournies dans le formulaire de contact a échoué.').'<br />'.htmlentities('
+		$erreur = htmlentities('La récupération de part ou totalité des informations fournies dans le formulaire de contact a échoué.').'<br>'.htmlentities('
 		Ceci peut-être dû à un remplissage incorrect du formulaire, veuillez réessayer en remplissant attentivement chaque élément.');
 		break;
 	case 'failmail':
