@@ -33,7 +33,31 @@ body
     background-color: black;
     color: #ddd;
 }
-
+aside
+{
+    position: fixed;
+    left: 3vh;
+    top: 3.5vh;
+    max-width: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+.social
+{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social img
+{
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+}
 main
 {
     margin: auto;
@@ -84,14 +108,17 @@ nav a:hover
 
 section
 {
+    background: #0a0a0d;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     scroll-snap-align: center;
-    width: 100%;
-    height: 100vh;
+    width: 98%;
+    border-radius: 15px;
+    margin: 2.5vh auto;
+    height: 95vh;
 }
 
 #accueil img
@@ -112,29 +139,71 @@ section
 
 #media
 {
+    flex-flow: column nowrap;
+    justify-content: center;
     text-align: center;
-    padding-top: 6vh;
+    --media-max-width : 1280px;
 }
-#media div
+#media h3
+{
+    border-radius: 15px;
+    margin: 30px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    transition: background 200ms;
+}
+#media h3:hover
+{
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+
+}
+#mediaLinks
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.mediaContainer
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.mediaDisplay
 {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 60vh;
+    max-width: var(--media-max-width);
+    min-height: calc(var(--media-max-width) * (9 / 16));
 }
+.mediaHide
+{
+    display: none;
+}
+
+
 #youtube-demo
 {
     aspect-ratio: 16/9;
     width: 100%;
+    max-width: var(--media-max-width);
     max-height: 50vh !important;
 }
 #media audio
 {
     display: block;
-    width: 80%;
-    height: 15vh;
+    width: 500px;
+}
+#audio img
+{
+    height: 20vh;
 }
 
 #contact
@@ -217,11 +286,6 @@ textarea
         border-radius: 10px;
         padding: 6px 8px;
     }
-    section 
-    {
-        width: 95%;
-        margin:auto;
-    }
     #accueil
     {
         flex-direction: column;
@@ -230,23 +294,6 @@ textarea
     #accueil img
     {
         width: 90%;
-    }
-    #media
-    {
-        flex-direction: column;
-        justify-content: center;
-    }
-    #media :nth-child(1)
-    {
-        justify-content: flex-end;
-    }
-    #media audio
-    {
-        height: 10%;
-    }
-    #media div
-    {
-        justify-content: center;
     }
 
     .form
